@@ -104,6 +104,23 @@ footer {
     padding: 1rem;
     font-size: 0.9rem;
 }
+/* Prevent browser or OS from applying dark mode automatically */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #fdfbf9 !important;
+    color: #3e2b23 !important;
+  }
+
+  header, footer {
+    background-color: #6f4e37 !important;
+    color: #ffffff !important;
+  }
+
+  .btn {
+    background-color: #d4a373 !important;
+    color: #ffffff !important;
+  }
+}
 
 
 
